@@ -27,13 +27,25 @@ Assumes:
 
 ## Chapters
 
+### Why (read first if you want the argument)
+
+| # | Title | What it covers |
+|---|-------|----------------|
+| 00 | [Why this guide exists](00-why.md) | The commercial case. On-prem AI economics, the ledger principle, the 90-day falsifiable wager. |
+| 0A | [Skills need a policy layer](0A-skills-need-a-policy-layer.md) | The technical thesis. Why setup and invocation must be separated. Why Leger is for this. |
+| 0B | [ISO vs PXE vs Tunnel](0B-iso-vs-pxe-vs-tunnel.md) | Why this guide standardizes on PXE, what the Cloudflare-Tunnel upgrade path looks like, when each approach is right. |
+| 0C | [Harness vs dynamic layer](0C-harness-vs-dynamic-layer.md) | What belongs in the slow-moving bootc image vs the fast-moving Leger layer vs operator dotfiles. |
+
+### How (the mechanical pipeline)
+
 | # | Title | Where it runs | Physical access needed |
 |---|-------|---------------|------------------------|
 | 01 | [BIOS configuration](01-bios.md) | on the target | yes (monitor + USB keyboard, once) |
 | 02 | [Root node flasher stack](02-root-node-flasher.md) | on the root node | no (after Ch. 01 unplug) |
 
-More chapters will be added as the pipeline solidifies (primary-side flasher
-stack, first install, reflash loop, tailnet enrollment, fleet scaling).
+More chapters to come: harness image composition, first flash + headless
+handoff, account chain (Google Workspace → Cloudflare → GitHub org →
+Tailscale), and cloud provisioning via `leger bootstrap` verbs.
 
 ## Conventions
 
