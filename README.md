@@ -30,6 +30,7 @@ Assumes:
 | # | Title | Where it runs | Physical access needed |
 |---|-------|---------------|------------------------|
 | 01 | [BIOS configuration](01-bios.md) | on the target | yes (monitor + USB keyboard, once) |
+| 02 | [Root node flasher stack](02-root-node-flasher.md) | on the root node | no (after Ch. 01 unplug) |
 
 More chapters will be added as the pipeline solidifies (primary-side flasher
 stack, first install, reflash loop, tailnet enrollment, fleet scaling).
