@@ -35,6 +35,8 @@ Assumes:
 | 0A | [Skills need a policy layer](0A-skills-need-a-policy-layer.md) | The technical thesis. Why setup and invocation must be separated. Why Leger is for this. |
 | 0B | [ISO vs PXE vs Tunnel](0B-iso-vs-pxe-vs-tunnel.md) | Why this guide standardizes on PXE, what the Cloudflare-Tunnel upgrade path looks like, when each approach is right. |
 | 0C | [Harness vs dynamic layer](0C-harness-vs-dynamic-layer.md) | What belongs in the slow-moving bootc image vs the fast-moving Leger layer vs operator dotfiles. |
+| 0D | [The installer roadmap](0D-the-installer-roadmap.md) | V0 (captive portal on Framework MicroSD card) → V1 (native app + BLE) → V2 (hardware-key pivot). V0 is scaffolding; V1 is the product. |
+| 0E | [The unavoidable BIOS trip](0E-the-bios-trip.md) | Why no software trick eliminates Chapter 01, what the competition does, the four honest paths for V1 acceptance, Framework-partnership endgame. |
 
 ### How (the mechanical pipeline)
 
@@ -42,10 +44,11 @@ Assumes:
 |---|-------|---------------|------------------------|
 | 01 | [BIOS configuration](01-bios.md) | on the target | yes (monitor + USB keyboard, once) |
 | 02 | [Root node flasher stack](02-root-node-flasher.md) | on the root node | no (after Ch. 01 unplug) |
+| 03 | [The harness bootc image](03-harness-image.md) | on the build host, published to a registry | no |
 
-More chapters to come: harness image composition, first flash + headless
-handoff, account chain (Google Workspace → Cloudflare → GitHub org →
-Tailscale), and cloud provisioning via `leger bootstrap` verbs.
+More chapters to come: first flash + headless handoff, account chain (Google
+Workspace → Cloudflare → GitHub org → Tailscale), and cloud provisioning via
+`leger bootstrap` verbs.
 
 ## Conventions
 
